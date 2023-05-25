@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media (max-width: 400px) {
+    p { font-size: 9px; }
+  }
+  
+  @media (min-width:401px , max-width:1000px ) {
+    p { font-size: 14px; }
+  }
+  
+@media (min-width: 1001px){
+    p { font-size: 16px; }
+  }
+  
+  
+body{
+    background: #010127;
+    
+  }
+
+.header{
+    top:0;
+    left: 0;
+  
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: rgba(19, 19, 84, 0.584);
+}
+.logo{
+    font-size: 2rem;
+    text-decoration: none;
+    font-display:initial;
+    font-weight: 600;
+    pointer-events: none;
+}
+
+.class1 a {
+ font-size: 1rem;
+margin-left:8vw;; 
+color:white;
+font: weight 500px;
+text-decoration:none;
+transition: 6s;
+}
+
+ .class1 a.but1{color: white;
+  background:linear-gradient(45deg,red,rgb(255, 255, 0));
+  -webkit-text-fill-color:white;}
+
+ .class1 a:hover{
+  color: white;
+    background:linear-gradient(45deg,#f06,#3cf);
+    -webkit-text-fill-color:white;
+   font-size: 1.4rem;
+ }
+ .HOME { 
+    display: contents;
+  height: 90vh;
+  width: 100%;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+   color: aliceblue;
+   justify-content: space-between;
+   
+}
+ .home-content{
+    background: transparent;
+    max-width: 60%;
+    max-height: 60%;
+    margin-left: 10vw;;
+ }
+
+    .home-content h1
+    {
+        
+        font-size:  3.5rem;
+        font-weight: 600;
+        opacity: 0;
+        animation: slideRight .5s ease forwards ;
+        animation-delay: .7s ;
+
+    }
+    .home-content h3{
+        margin-top: 8px;
+        font-size: 2.5rem;
+        font-weight: 800;
+        opacity: 0;
+        animation: slideLeft .5s ease forwards ;
+        animation-delay: 1s ;
+
+    }
+    .home-content p{
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        animation: slideLeft 1.5s ease forwards ;
+        animation-delay: 1.5s ;
+
+    }
+  .home-content button{ margin-top: 20px;
+    font-size: 1.2rem;
+background: transparent;
+color: white;
+border-radius: 20%;
+padding: 10px;
+border-width: thick;
+border-color: white(42, 20, 243);
+background-color: rgb(48, 51, 127);
+
+    }
+    .home-content button:hover{
+      background:linear-gradient(45deg,#f06,#3cf);
+
+    }
+
+    .social{
+        position: absolute;
+        margin-top: 0;
+        bottom: 30%;
+        width: 7%;
+        justify-content: space-between;
+    }
+
+.social a {
+display: inline-flex;
+width: 2.5rem;
+height: 2.5rem;
+background:linear-gradient(45deg,#f06,#3cf) ;
+font-size: 2rem;
+text-decoration: none;
+border-radius: 50%;
+align-items: center;
+justify-content: center;
+color: black;
+ z-index: 1;
+ }
+/* social a::before{
+  position: absolute;
+  width:100%;
+  height: 100%;
+  background:linear-gradient(45deg,#f06,#3cf) ;
+  border-radius: 50%;
+  z-index: -1;
+  transition: .5s ease;
+
+}
+
+.social a:hover::before{
+  filter: blur (5px);
+}
+
+.social a::after{
+  content: "";
+  position: absolute;
+  width:100%;
+  height: 100%;
+  background: #010127;
+  border-radius: 50%;
+  transform: scale(0.88);
+  z-index: -1;
+  transition: .5 ease;
+
+}
+.social a:hover::after{
+  transform: scale(0);
+}
+*/
+ 
+.social a:hover{
+  background: transparent;
+  color: white;
+}
+
+ @keyframes slideRight{
+  0% {
+    opacity:0;
+    transform:translateX(-150px);
+  }
+
+100%{
+    opacity:1;
+    transform: translateX(0);
+}
+ }
+
+ @keyframes slideLeft{
+    0% {
+      opacity:0;
+      transform:translateX(150px);
+    }
+  
+  100%{
+      opacity:1;
+      transform: translateX(0);
+  }
+   }
+
+   .home_img{
+    display: inline-block;
+  width: 23rem;
+  height:23rem;
+  background: transparent;
+  
+   }
+   .home_img .glowing_circle{
+
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(45deg,#f06,#3cf);
+    border-radius: 50% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+   }
+   .home_img .glowing_circle::after{
+    content: "";
+    position: absolute;
+    width: 21rem;
+    height: 21rem;
+    background: transparent;
+    border-radius: 50%;
+
+}
+.glowing_circle .image{
+  position: relative;
+  width: 21rem;
+  height: 21rem;
+  background:transparent;
+  border-radius: 50%;
+  z-index: 1;
+  overflow: hidden;
+}
+   .image img{
+    
+    top: 20rem;
+    
+    max-width: 21rem;
+    object-fit: cover;
+   border-radius: 50%;
+   animation: slideRight .9s ease forwards ;
+   animation-delay: 1s 
+  }
+   
