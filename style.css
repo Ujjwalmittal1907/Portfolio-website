@@ -19,7 +19,7 @@
   
   
 body{
-    background: #010127;
+    background: #2a3235;
     
   }
 
@@ -34,7 +34,7 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    background: rgba(19, 19, 84, 0.584);
+    background: rgba(22, 254, 64, 0.584);
 }
 .logo{
     font-size: 2rem;
@@ -54,7 +54,7 @@ transition: 6s;
 }
 
  .class1 a.but1{color: white;
-  background:linear-gradient(45deg,red,rgb(255, 255, 0));
+  background:linear-gradient(45deg,#0C1A1A, #6ACFC7);
   -webkit-text-fill-color:white;}
 
  .class1 a:hover{
